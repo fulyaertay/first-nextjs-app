@@ -32,7 +32,7 @@ export default function Home({ movies }) {
           .popular>div{
             width:25%;
             position:relative;
-            calc(25%-10px);
+            width:calc(25%-10px);
           }
           .popular>div>h3{
             position:absolute;

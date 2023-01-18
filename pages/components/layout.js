@@ -2,7 +2,9 @@
 export default function Layout({ children }) {
     return <div className="layout">{children}
         <style jsx>{`
-    .layout: red;
+    .layout: {
+        background-color:red;
+    }
     `}
     </style>
     </div>

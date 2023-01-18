@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="home">
+     
         <h1>Hello World! You are on home page</h1>
         <Image src="/images/cat.jpg" width={900} height={600}></Image>
         <div>
@@ -22,7 +22,7 @@ export default function Home() {
           <Link href="./about/about"> About</Link>
           <Link href="./posts/first-post"> Posts</Link>
         </div>
-      </main>
+     
     </Layout>
   );
 }

@@ -1,3 +1,30 @@
+## Project: List Popular Films
+
+## Visulation of the App
+
+![image](./movies.png)
+
+## Description
+```bash
+- User can list most popular movies
+```
+
+## Overview
+I mastered HTML, CSS, JavaScript, NextJS features in this project. You can see the visual representation of the app above.
+
+## Technologies 💻
+```bash
+- NextJS(getStaticProps)
+- JavaScript
+- HTML/CSS
+- Movies are fetched from [https://www.themoviedb.org/]
+- You can get an API key on [https://developers.themoviedb.org/3]
+```
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

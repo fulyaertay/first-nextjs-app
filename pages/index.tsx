@@ -16,6 +16,7 @@ export default function Home() {
       </Head>
       <main>
        <h1>Hello World! You are on home page</h1>
+       <Image src="/images/cat.jpeg" width={400} height={400}></Image>
        <Link href="/">Home</Link>
        <Link href="./about/about">About</Link>
        <Link href="./posts/first-post">Posts</Link>

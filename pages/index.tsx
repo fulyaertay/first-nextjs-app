@@ -6,18 +6,24 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({movies}) {
+  console.log(movies)
   return (
     <>
 
-        <h1>The Most Popular Films</h1>
-        {movies.results.map(movie=>(
-          <div>
-            <h3>{movie.title}</h3>
-          </div>
-        )
-          
-        )}
-        
+       
+<h1>The Most Popular Films</h1>
+
+    {movies.results.map(movie=>(
+       <>
+        <h3>{movie.title}</h3>
+        <img src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`} alt="" />
+       </>
+   
+      
+
+    ))}
+      
+           
        
 
     </>

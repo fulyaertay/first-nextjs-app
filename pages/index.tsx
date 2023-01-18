@@ -25,9 +25,11 @@ export default function Home({ movies }) {
           .popular {
             display: flex;
             flex-wrap: wrap;
-            width: 1500px;
-            margin: 0 auto;
+            width: 1000px;
+            margin: 0 600px;
             gap:10px;
+            padding:20px;
+            
           }
           .popular>div{
             width:25%;
@@ -56,7 +58,7 @@ export default function Home({ movies }) {
 //list popular movies
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
-  // You can use any data fetching library
+  // You can use your own API key
   const request = await fetch(
     " https://api.themoviedb.org/3/movie/popular?api_key=32f7c7b9f71027c01ab2c5910e5be9c9&language=en-US&page=1"
   );

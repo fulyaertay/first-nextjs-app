@@ -1,11 +1,6 @@
-
+import styles from './layout.module.css';
 export default function Layout({ children }) {
-    return <div className="layout">{children}
-        <style jsx>{`
-    .layout {
-        background-color:lime;
-    }
-    `}
-    </style>
+    return <div className={styles.container}>{children}
+    
     </div>
   }

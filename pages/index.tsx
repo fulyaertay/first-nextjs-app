@@ -27,12 +27,12 @@ export default function Home({ movies }) {
             flex-wrap: wrap;
             width: 1500px;
             margin: 0 auto;
+            gap:10px;
           }
           .popular>div{
             width:25%;
             position:relative;
-            margin-left:10px;
-            margin-bottom:10px;
+            calc(25%-10px);
           }
           .popular>div>h3{
             position:absolute;
@@ -41,7 +41,7 @@ export default function Home({ movies }) {
             font-size:20px;
             width:100%;
             color:#ffff;
-          
+            padding:20px;
 
           }
           .popular>div>img{

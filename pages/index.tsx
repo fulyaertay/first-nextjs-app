@@ -5,28 +5,48 @@ import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({movies}) {
-  console.log(movies)
+export default function Home({ movies }) {
   return (
-    <>
+    <div>
+      <h1>The Most Popular Films</h1>
+      <div className="popular">
 
-       
-<h1>The Most Popular Films</h1>
+        {movies.results.map((movie) => (
+          <div>
+            <h3>{movie.title}</h3>
+            <img
+              src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`}
+              alt=""
+            />
+          </div>
+        ))}
 
-    {movies.results.map(movie=>(
-       <>
-        <h3>{movie.title}</h3>
-        <img src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`} alt="" />
-       </>
-   
-      
+        <style jsx>{`
+          .popular {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1500px;
+            margin: 0 auto;
+          }
+          .popular>div{
+            width:25%;
+            position:relative;
+            margin-left:10px;
+            margin-bottom:10px;
+          }
+          .popular>div>h3{
+            position:absolute;
+            bottom:0;
+            left:0;
+            font-size:20px;
+            width:100%;
+            color:#ffff;
+          
 
-    ))}
-      
-           
-       
-
-    </>
+          }
+        `}</style>
+      </div>
+    </div>
   );
 }
 
@@ -34,12 +54,13 @@ export default function Home({movies}) {
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
-  const request = await fetch(' https://api.themoviedb.org/3/movie/popular?api_key=32f7c7b9f71027c01ab2c5910e5be9c9&language=en-US&page=1')
-  const movies=await request.json()
+  const request = await fetch(
+    " https://api.themoviedb.org/3/movie/popular?api_key=32f7c7b9f71027c01ab2c5910e5be9c9&language=en-US&page=1"
+  );
+  const movies = await request.json();
   return {
     props: {
       movies,
     },
-  }
-       
+  };
 }

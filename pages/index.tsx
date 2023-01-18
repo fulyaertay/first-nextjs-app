@@ -9,10 +9,24 @@ export default function Home() {
   return (
     <>
 
-        <h1>Home Page</h1>
-
-        <Image src="/images/cat.jpg" width={900} height={600}></Image>
+        <h1>The Most Popular Films</h1>
+        
+       
 
     </>
   );
+}
+
+//list popular movies
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const request = await fetch(' https://api.themoviedb.org/3/movie/popular?api_key=32f7c7b9f71027c01ab2c5910e5be9c9&language=en-US&page=1')
+  const movies=await request.json()
+  return {
+    props: {
+      movies,
+    },
+  }
+       
 }

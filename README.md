@@ -17,7 +17,7 @@ I mastered HTML, CSS, JavaScript, NextJS features in this project. You can see t
 - NextJS(getStaticProps)
 - JavaScript
 - HTML/CSS
-- Movies are fetched from [https://www.themoviedb.org/]
+- Movies are fetched from(https://www.themoviedb.org/)
 - You can get an API key on [https://developers.themoviedb.org/3]
 ```
 

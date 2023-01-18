@@ -41,7 +41,7 @@ export default function Home({ movies }) {
             font-size:20px;
             width:100%;
             color:#ffff;
-            padding:20px;
+            padding:50px 20px 20px 20px;
 
           }
           .popular>div>img{

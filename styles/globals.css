@@ -12,6 +12,8 @@ body {
 * {
   box-sizing: border-box;
   list-style: none;
+  margin:0;
+  padding: 0;
 }
 
 a {
@@ -28,5 +30,8 @@ img {
   display: block;
 }
 h1{
-  text-align:center
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
 }

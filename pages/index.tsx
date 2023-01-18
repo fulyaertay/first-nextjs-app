@@ -44,6 +44,9 @@ export default function Home({ movies }) {
           
 
           }
+          .popular>div>img{
+            width:100%;
+          }
         `}</style>
       </div>
     </div>
